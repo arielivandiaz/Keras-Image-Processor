@@ -137,7 +137,7 @@ if __name__ == '__main__':
 		frame_count += offset
 
 		#Print frame prediction
-		#print ("Frame : %d -> \t %s , \t %s , \t %s" % (frame_count,prediction[0][0][1],prediction[0][1][1],prediction[0][2][1]))
+		print ("Frame : %d -> \t %s , \t %s , \t %s" % (frame_count,prediction[0][0][1],prediction[0][1][1],prediction[0][2][1]))
 
 		#Make a dictionary with probs
 		for i in range(0,3):			

@@ -39,7 +39,7 @@ def read_args():
 
 def load_model (args):
 
-	if args.output_layer == '0':
+
 		if args.model == 'inception':
 			model = InceptionV3(include_top=False, weights='imagenet', pooling=args.pooling)
 			preprocess_mode='tf'
@@ -72,7 +72,7 @@ def load_model (args):
 			return 0
 
 
-	return model,preprocess_mode
+		return model,preprocess_mode
 
 
 def load_image(image_path, model_name):
